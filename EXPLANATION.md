@@ -103,6 +103,7 @@ PostureAI uses the **Google MediaPipe Pose Landmarker** model (`pose_landmarker_
 - **Inference Mode:** Synchronous single-image execution (`RunningMode.IMAGE`).
 - **Group Rejection Capability:** Configured with `num_poses=2`. If more than one person is detected in the frame, the system explicitly rejects the image to prevent misattributing body landmarks between multiple individuals.
 
+
 ### 3.2 The 33 Full-Body Anatomical Landmarks
 
 ```
@@ -136,6 +137,7 @@ PostureAI uses the **Google MediaPipe Pose Landmarker** model (`pose_landmarker_
 MediaPipe outputs two representations for every landmark point:
 1. **Normalized Image Coordinates $(x, y)$:** Values mapped from $0.0$ to $1.0$, scaled by image width $W$ and image height $H$.
 2. **Metric Depth Coordinate ($z$):** Represents landmark depth relative to the midpoint of the hips, with positive $z$ values pointing into the screen (away from the camera) and negative $z$ values pointing toward the camera.
+
 
 ---
 
